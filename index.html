@@ -111,34 +111,32 @@
             </div>
         </section>
         <section class="sales">
-            <h2 class="sales__titel .visually-hidden">sales</h2>
+            <h2 class="sales__titel visually-hidden">sales</h2>
             <div class="container">
                 <ul class="sales__list">
-                    <li class="sales_item sales_item--woman">
-                        <p>30% off</p>
-                        <h3>for woman</h3>
+                    <li class="sales__item sales__item--woman">
+                        <p class="sales__text">30% off</p>
+                        <h3 class="sales__titel">for woman</h3>
                     </li>
-                    <li class="sales_item sales_item--man">
-                        <p>hot deal</p>
-                        <h3>for man</h3>
+                    <li class="sales__item sales__item--man">
+                        <p class="sales__text">hot deal</p>
+                        <h3 class="sales__titel">for man</h3>
                     </li>
-                    <li class="sales_item sales_item--kids">
-                        <p>new arrivals</p>
-                        <h3>for kids</h3>
+                    <li class="sales__item sales__item--kids">
+                        <p class="sales__text">new arrivals</p>
+                        <h3 class="sales__titel">for kids</h3>
                     </li>
-                    <li class="sales_item sales_item--accesories">
-                        <p>luxirous & trendy</p>
-                        <h3>accesories</h3>
+                    <li class="sales__item sales__item--accesories">
+                        <p class="sales__text">luxirous & trendy</p>
+                        <h3 class="sales__titel">accesories</h3>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="catalog">
             <div class="container">
-                <div class="catalog__titel-wrp">
-                    <h2 class="catalog__titel">fetured Items</h2>
-                    <p class="catalog__text">shop for items based on what we featured in this week</p>
-                </div>
+                <h2 class="catalog__titel">Fetured Items</h2>
+                <p class="catalog__text">shop for items based on what we featured in this week</p>
                 <ul class="catalog__list">
                     <li class="catalog__item">
                         <img class="catalog__img" src="img/catalog-1.jpg" alt="catalog-1">
@@ -147,7 +145,7 @@
                             Australian
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
-                        <p>$52.00</p>
+                        <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
                         <img class="catalog__img" src="img/catalog-2.jpg" alt="catalog-2">
@@ -156,7 +154,7 @@
                             Australian
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
-                        <p>$52.00</p>
+                        <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
                         <img class="catalog__img" src="img/catalog-3.jpg" alt="catalog-3">
@@ -165,7 +163,7 @@
                             Australian
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
-                        <p>$52.00</p>
+                        <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
                         <img class="catalog__img" src="img/catalog-4.jpg" alt="catalog-4">
@@ -174,7 +172,7 @@
                             Australian
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
-                        <p>$52.00</p>
+                        <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
                         <img class="catalog__img" src="img/catalog-5.jpg" alt="catalog-5">
@@ -183,7 +181,7 @@
                             Australian
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
-                        <p>$52.00</p>
+                        <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
                         <img class="catalog__img" src="img/catalog-6.jpg" alt="catalog-6">
@@ -192,58 +190,82 @@
                             Australian
                             arbiter of cool Kym Ellery
                             teams up with Moda Operandi.</p>
-                        <p>$52.00</p>
+                        <p class="catalog__item-price">$52.00</p>
                     </li>
                 </ul>
-                <button class="catalog__button">browse all product</button>
+                <div class="catalog__button-wrp">
+                    <button class="catalog__button">browse all product</button>
+                </div>
             </div>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <img src="img/truck.svg" alt="truck">
-                    <h2>Free Delivery</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-                <li>
-                    <img src="img/persent.svg" alt="persent">
-                    <h2>Sales & discounts</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-                <li>
-                    <img src="img/crown.svg" alt="crown">
-                    <h2>Quality assurance</h2>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.</p>
-                </li>
-            </ul>
+        <section class="information">
+            <div class="container">
+                <ul class="information__list">
+                    <li class="information__item">
+                        <img class="information__img" src="img/truck.svg" alt="truck">
+                        <h2 class="information__titel">Free Delivery</h2>
+                        <p class="information__text">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov
+                            tion with extensive
+                            models.</p>
+                    </li>
+                    <li class="information__item">
+                        <img class="information__img" src="img/persent.svg" alt="persent">
+                        <h2 class="information__titel">Sales & discounts</h2>
+                        <p class="information__text">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov
+                            tion with extensive
+                            models.</p>
+                    </li>
+                    <li class="information__item">
+                        <img class="information__img" src="img/crown.svg" alt="crown">
+                        <h2 class="information__titel">Quality assurance</h2>
+                        <p class="information__text">Worldwide delivery on all. Authorit tively morph
+                            next-generation
+                            innov
+                            tion with extensive
+                            models.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <img src="img/woman.png" alt="woman">
-        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-        <h2>SUBSCRIBE FOR OUR NEWLETTER AND PROMOTION</h2>
-        <p>© 2021 Brand All Rights Reserved.</p>
-        <ul>
-            <li>
-                <a href="#">link</a>
-                <img src="img/facebook.svg" alt="facebook">
-            </li>
-            <li>
-                <a href="#">link</a>
-                <img src="img/instagram.svg" alt="instagram">
-            </li>
-            <li>
-                <a href="#">link</a>
-                <img src="img/pinterest.svg" alt="pinterest">
-            </li>
-            <li>
-                <a href="#">link</a>
-                <img src="img/twitter.svg" alt="twitter">
-            </li>
-        </ul>
+    <footer class="footer">
+        <div class="footer__subscription-wrp">
+            <div class="footer__woman">
+                <img class="footer__img" src="img/woman.png" alt="woman">
+                <p class="footer__text-avtor">“Vestibulum quis porttitor dui! Quisque
+                    viverra nunc mi, <samp class="footer__subtext">a pulvinar purus
+                        condimentum“</samp></p>
+            </div>
+            <div class="footer__subscription">
+                <h2 class="footer__subscription-titel">subscribe</h2>
+                <p class="footer__subscription-text">for our newletter and promotion</p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <p class="footer__text">© 2021 Brand All Rights Reserved.</p>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__social-icon" href="#"></a>
+                    <img class="footer__social-img" src="img/facebook.svg" alt="facebook">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__social-icon" href="#"></a>
+                    <img class="footer__social-img" src="img/instagram.svg" alt="instagram">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__social-icon" href="#"></a>
+                    <img class="footer__social-img" src="img/pinterest.svg" alt="pinterest">
+                </li>
+                <li class="footer__item">
+                    <a class="footer__social-icon" href="#"></a>
+                    <img class="footer__social-img" src="img/twitter.svg" alt="twitter">
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
