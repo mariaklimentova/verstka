@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
             </div>
             <ul class="header__list">
                 <li class="header__item">
-                    <button class="header__button">
+                    <button type="button" class="header__button">
                         <img src="img/menu.svg" alt="menu">
                     </button>
                 </li>
@@ -139,7 +139,7 @@
                 <p class="catalog__text">shop for items based on what we featured in this week</p>
                 <ul class="catalog__list">
                     <li class="catalog__item">
-                        <img class="catalog__img" src="img/catalog-1.jpg" alt="catalog-1">
+                        <img class="catalog__img" src="img/catalog-1.jpg" alt="catalog-1" width="360px" height="420px">
                         <a class="catalog__link-titel" href="#">ellery x m'o capsule</a>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -148,7 +148,7 @@
                         <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__img" src="img/catalog-2.jpg" alt="catalog-2">
+                        <img class="catalog__img" src="img/catalog-2.jpg" alt="catalog-2" width="360px" height="420px">
                         <a class="catalog__link-titel" href="#">leelry x m'o capsule</a>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -157,7 +157,7 @@
                         <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__img" src="img/catalog-3.jpg" alt="catalog-3">
+                        <img class="catalog__img" src="img/catalog-3.jpg" alt="catalog-3" width="360px" height="420px">
                         <a class="catalog__link-titel" href="#">ellery x m'o capsule</a>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -166,7 +166,7 @@
                         <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__img" src="img/catalog-4.jpg" alt="catalog-4">
+                        <img class="catalog__img" src="img/catalog-4.jpg" alt="catalog-4" width="360px" height="420px">
                         <a class="catalog__link-titel" href="#">ellery x m'o capsule</a>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -175,7 +175,7 @@
                         <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__img" src="img/catalog-5.jpg" alt="catalog-5">
+                        <img class="catalog__img" src="img/catalog-5.jpg" alt="catalog-5" width="360px" height="420px">
                         <a class="catalog__link-titel" href="#">ellery x m'o capsule</a>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -184,7 +184,7 @@
                         <p class="catalog__item-price">$52.00</p>
                     </li>
                     <li class="catalog__item">
-                        <img class="catalog__img" src="img/catalog-6.jpg" alt="catalog-6">
+                        <img class="catalog__img" src="img/catalog-6.jpg" alt="catalog-6" width="360px" height="420px">
                         <a class="catalog__link-titel" href="#">ellery x m'o capsule</a>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -194,7 +194,7 @@
                     </li>
                 </ul>
                 <div class="catalog__button-wrp">
-                    <button class="catalog__button">browse all product</button>
+                    <button type="button" class="catalog__button">browse all product</button>
                 </div>
             </div>
         </section>
@@ -243,6 +243,11 @@
             <div class="footer__subscription">
                 <h2 class="footer__subscription-titel">subscribe</h2>
                 <p class="footer__subscription-text">for our newletter and promotion</p>
+                <form class="footer__form" action="">
+                    <label class="visually-hidden" for="email">email</label>
+                    <input class="footer__form-window" id="email" type="email" required placeholder="Enter Your Email">
+                    <button class="footer__form-button" type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
         <div class="footer__social">
