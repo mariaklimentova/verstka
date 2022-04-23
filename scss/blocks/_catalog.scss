@@ -1,0 +1,118 @@
+.catalog__titel {
+    text-align: center;
+    margin: 96px 0 0 0;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px
+}
+
+.catalog__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin: 0 0 15px 0;
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog__item {
+    background-color: #F8F8F8;
+    width: 360px;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+
+.catalog__button-cart {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    width: 138px;
+    height: 43px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-image: url(../img/button.svg.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding: 0 0 0 35px;
+    display: none;
+}
+
+.catalog__overlay {
+    position: relative;
+}
+
+.catalog__overlay::before {
+    content: '';
+    width: 360px;
+    height: 420px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    display: none;
+}
+
+.catalog__item:hover .catalog__button-cart,
+.catalog__item:hover .catalog__overlay::before {
+    display: block;
+}
+
+.catalog__img {
+    margin: 0 0 30px 0;
+    width: 360px;
+    height: 420px;
+}
+
+.catalog__item-titel {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0 18px;
+}
+
+.catalog__item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    width: 315px;
+    margin: 12px 0 18px 18px;
+}
+
+.catalog__item-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+    font-style: oblique;
+    margin: 0 0 20px 18px;
+}
+
+.catalog__button-wrp {
+    width: 100%;
+    text-align: center;
+}
+
+.catalog__button {
+    background-color: $dark-pink;
+    padding: 14px 38px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 48px 0 0 0;
+
+}
+
+.information {
+    background-color: $black;
+    min-height: 340px;
+    margin: 109px 0 0 0;
+}
