@@ -1,0 +1,41 @@
+.brand {
+    display: flex;
+    margin: 0 0 62px 0;
+}
+
+.brend__titel-wrp {
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+    background-color: $light-pink;
+}
+
+.brend__titel:before {
+    content: '';
+    background: $dark-pink;
+    height: 92px;
+    width: 12px;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+}
+
+.brend__titel {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.brand__subtitel {
+    display: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand__subtitel-pink {
+    color: $dark-pink;
+}

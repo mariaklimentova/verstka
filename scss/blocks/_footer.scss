@@ -1,0 +1,103 @@
+.footer__subscription-wrp {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/fon.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.footer__woman {
+    margin: 87px 0 126px 0;
+    width: 356px;
+    text-align: center;
+}
+
+.footer__text-avtor {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 30px 0 0 0;
+}
+
+.footer__subtext {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.footer__subscription {
+    margin: 150px 0 0 0;
+    width: 550px;
+    text-align: center;
+}
+
+.footer__subscription-titel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-transform: uppercase;
+}
+
+.footer__subscription-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 0 32px 0;
+}
+
+.footer__form {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__form-window {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #E1E1E1;
+    border: none;
+    width: 260px;
+    padding: 0 0 0 20px;
+}
+
+.footer__form-window:hover {
+    background-color: $light-pink;
+    cursor: pointer;
+}
+
+.footer__form-window:focus {
+    background-color: $dark-pink;
+    cursor: text;
+}
+
+.footer__form-button {
+    background-color: $dark-pink;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+}
+
+.footer__social {
+    display: flex;
+    min-height: 80px;
+    background-color: $black;
+    padding: 0 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text {
+    align-items: center;
+    color: #FBFBFB;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__item {
+    margin: 0 7px 0 0;
+}
