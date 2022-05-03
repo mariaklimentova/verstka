@@ -1,11 +1,13 @@
-@import './reset';
+@import './veriables';
 @import './general';
-@import './variables';
+@import './reset';
+@import './mixins';
+/*bloks*/
 @import './blocks/header';
 @import './blocks/nav';
 @import './blocks/brand';
 @import './blocks/sales';
 @import './blocks/catalog';
-@import './blocks/information';
 @import './blocks/footer';
+@import './blocks/information';
 @import './blocks/registration';

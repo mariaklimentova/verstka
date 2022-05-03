@@ -1,6 +1,21 @@
 .brand {
+    background: $light-pink;
+    margin: 0 0 45px 0;
+}
+
+.brand__container {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
-    margin: 0 0 62px 0;
+}
+
+.brand__img-wrp {
+    background: $light-pink;
+}
+
+.brand__img {
+    height: 100%;
+    width: 100%;
 }
 
 .brend__titel-wrp {
@@ -22,20 +37,61 @@
 }
 
 .brend__titel {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
+    @include font(48px, 58px, 900);
     text-transform: uppercase;
     position: relative;
 }
 
 .brand__subtitel {
     display: block;
-    font-size: 37px;
-    font-weight: 700;
-    line-height: 44px;
+    @include font(37px, 44px, 700);
 }
 
 .brand__subtitel-pink {
     color: $dark-pink;
+}
+
+@media(max-width: 1600px) {
+    .brand {
+        height: 368px;
+    }
+
+    .brand__container {
+        max-width: 735px;
+        height: 367px;
+    }
+
+    .brend__titel {
+        @include font(44px, 53px, 900)
+    }
+
+    .brand__subtitel {
+        @include font(24px, 28px, 700)
+    }
+}
+
+@media(max-width: 768px) {
+    .brand__container {
+        max-width: 343px;
+    }
+
+    .brand__img-wrp {
+        display: none;
+    }
+
+    .brend__titel-wrp {
+        padding: 0 0 0 83px;
+    }
+
+    .brend__titel {
+        @include font(38px, 45px, 900);
+    }
+
+    .brand__subtitel {
+        @include font(20px, 24px, 700)
+    }
+
+    .brend__titel:before {
+        height: 61px;
+    }
 }

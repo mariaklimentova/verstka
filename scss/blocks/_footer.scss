@@ -101,3 +101,45 @@
 .footer__item {
     margin: 0 7px 0 0;
 }
+
+@media(max-width: 1600px) {
+    .footer__subscription-wrp {
+        flex-direction: column;
+        @include flex-center;
+        background-position-x: 20%;
+    }
+
+    .footer__woman {
+        margin: 54px 0 0 0;
+    }
+
+    .footer__subscription {
+        margin: 64px 0 0 0;
+    }
+
+    .footer__subscription-text {
+        margin: 0 0 27px 0;
+    }
+
+    .footer__form {
+        margin: 0 0 219px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer__form {
+        margin: 0 0 109px 0;
+    }
+
+    .footer__form-window {
+        width: 240px;
+    }
+
+    .footer__text {
+        display: none;
+    }
+
+    .footer__social {
+        @include flex-center;
+    }
+}

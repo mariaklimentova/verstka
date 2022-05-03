@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css.map">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href=" https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&" rel="таблица стилей">
@@ -97,10 +97,10 @@
                         </nav>
                     </div>
                 </li>
-                <li class="header__item">
+                <li class="header__item header__item-none">
                     <a href="#" class="header__link"><img class="header__icon" src="img/user.svg" alt="user"></a>
                 </li>
-                <li class="header__item">
+                <li class="header__item header__item-none">
                     <a href="#" class="header__link"><img class="header__icon" src="img/basket.svg" alt="basket"></a>
                 </li>
             </ul>
@@ -108,10 +108,14 @@
     </header>
     <main>
         <section class="brand">
-            <img class="brand__img" src="img/man.jpg" alt="photo-man">
-            <div class="brend__titel-wrp">
-                <h1 class="brend__titel">the brands <span class="brand__subtitel">of luxerious
-                        <samp class="brand__subtitel-pink">fashion</samp></span></h1>
+            <div class="brand__container">
+                <div class="brand__img-wrp">
+                    <img class="brand__img" src="img/man.png.png" alt="photo-man">
+                </div>
+                <div class="brend__titel-wrp">
+                    <h1 class="brend__titel">the brands <span class="brand__subtitel">of luxerious
+                            <samp class="brand__subtitel-pink">fashion</samp></span></h1>
+                </div>
             </div>
         </section>
         <section class="sales">
@@ -191,8 +195,7 @@
                             <button class="catalog__button-cart catalog__button-cart-style" type="button">Add to
                                 Cart</button>
                         </div>
-                        <h3 class="catalog__item-titel">ellery x m'o capsule</h3><a class="catalog__link-titel"
-                            href="#">ellery x m'o capsule</a>
+                        <h3 class="catalog__item-titel">ellery x m'o capsule</h3>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
                             arbiter of cool Kym Ellery

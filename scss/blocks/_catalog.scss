@@ -1,9 +1,7 @@
 .catalog__titel {
     text-align: center;
     margin: 96px 0 0 0;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px
+    @include font(30px, 36px, 400);
 }
 
 .catalog__text {
@@ -108,11 +106,18 @@
     font-size: 16px;
     line-height: 19px;
     margin: 48px 0 0 0;
-
 }
 
-.information {
-    background-color: $black;
-    min-height: 340px;
-    margin: 109px 0 0 0;
+@media(max-width: 1600px) {
+    .catalog__button {
+        background-color: #FFFFFF;
+        border-color: $dark-pink;
+        color: $dark-pink;
+    }
+}
+
+@media(max-width: 768px) {
+    .catalog__item {
+        margin: 16px 0 0 0;
+    }
 }
