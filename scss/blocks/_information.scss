@@ -1,3 +1,9 @@
+.information {
+    background-color: $black;
+    min-height: 340px;
+    margin: 109px 0 0 0;
+}
+
 .information__list {
     display: flex;
     text-align: center;
@@ -12,10 +18,35 @@
 }
 
 .information__text {
-    width: 360px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
+    padding: 0 15px;
     color: #FBFBFB;
+    @include font(14px, 17px, 300)
+}
+
+@media(max-width: 1600px) {
+    .information__list {
+        display: block;
+        padding: 48px 0 16px 0;
+    }
+
+    .information__item {
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    .information__titel {
+        margin: 28px 0 16px 0;
+    }
+
+    .information__text {
+        margin: 0 0 48px 0;
+        max-width: 360px;
+        padding: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .information__list {
+        padding: 48px 0 33px 0;
+    }
 }

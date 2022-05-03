@@ -88,6 +88,7 @@
     background: white;
     padding: 0 0 185px 33px;
     display: none;
+
 }
 
 .header__nav-list {
@@ -97,4 +98,14 @@
 
 .header__nav-item {
     margin: 0 0 20px 0;
+}
+
+@media(max-width: 768px) {
+    .header__item-none {
+        display: none;
+    }
+
+    .header__form-window {
+        width: 160px;
+    }
 }

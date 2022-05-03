@@ -1,14 +1,3 @@
-.registration_titel {
-    min-height: 148px;
-    background: $light-pink;
-    padding: 0 0 0 230px;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    line-height: 29px;
-    color: $dark-pink;
-}
-
 .registration {
     display: flex;
     justify-content: space-between;
@@ -24,9 +13,7 @@
     display: block;
 }
 
-[type="radio"] {
-    display: none;
-}
+
 
 .registration__label {
     content: ' ';
