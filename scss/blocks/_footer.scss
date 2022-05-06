@@ -5,18 +5,26 @@
     background-position: center;
     background-size: cover;
 
+    @include tablet-mid {
+        flex-direction: column;
+        @include flex-center;
+        background-position-x: 20%;
+    }
 }
 
 .footer__woman {
     margin: 87px 0 126px 0;
-    width: 356px;
+    max-width: 356px;
     text-align: center;
+
+    @include tablet {
+        margin: 54px 0 0 0;
+    }
 }
 
 .footer__text-avtor {
-    font-size: 20px;
-    line-height: 24px;
     margin: 30px 0 0 0;
+    @include font(20px);
 }
 
 .footer__subtext {
@@ -26,27 +34,60 @@
 
 .footer__subscription {
     margin: 150px 0 0 0;
-    width: 550px;
+    max-width: 350px;
     text-align: center;
+
+    @include tablet {
+        margin: 64px 0 0 0;
+    }
 }
 
 .footer__subscription-titel {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 167.2%;
     text-transform: uppercase;
+    @include font(24px, 27px, 700);
+
+    @include tablet-mid {
+        width: 85%;
+    }
+
+    @include mobile-mid {
+        width: 98%;
+    }
 }
 
 .footer__subscription-text {
-    font-size: 18px;
-    line-height: 30px;
     text-transform: uppercase;
     margin: 0 0 32px 0;
+    @include font(18px, 30px);
+
+    @include tablet {
+        margin: 0 0 27px 0;
+    }
+
+    @include tablet-mid {
+        width: 85%;
+    }
+
+    @include mobile-mid {
+        width: 92%;
+    }
 }
 
 .footer__form {
     display: flex;
     justify-content: center;
+
+    @include tablet {
+        margin: 0 0 219px 0;
+    }
+
+    @include mobile {
+        margin: 0 0 109px 0;
+    }
+
+    @include tablet-mid {
+        width: 90%;
+    }
 }
 
 .footer__form-window {
@@ -56,16 +97,11 @@
     border: none;
     width: 260px;
     padding: 0 0 0 20px;
-}
+    transition: background-color 800ms;
 
-.footer__form-window:hover {
-    background-color: $light-pink;
-    cursor: pointer;
-}
-
-.footer__form-window:focus {
-    background-color: $dark-pink;
-    cursor: text;
+    @include mobile {
+        width: 95%;
+    }
 }
 
 .footer__form-button {
@@ -76,6 +112,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: none;
+    transition: background-color 800ms, color 800ms;
 }
 
 .footer__social {
@@ -85,6 +122,11 @@
     padding: 0 130px;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        @include flex-center;
+        padding: 0;
+    }
 }
 
 .footer__text {
@@ -92,6 +134,10 @@
     color: #FBFBFB;
     font-size: 16px;
     line-height: 19px;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .footer__list {
@@ -100,46 +146,4 @@
 
 .footer__item {
     margin: 0 7px 0 0;
-}
-
-@media(max-width: 1600px) {
-    .footer__subscription-wrp {
-        flex-direction: column;
-        @include flex-center;
-        background-position-x: 20%;
-    }
-
-    .footer__woman {
-        margin: 54px 0 0 0;
-    }
-
-    .footer__subscription {
-        margin: 64px 0 0 0;
-    }
-
-    .footer__subscription-text {
-        margin: 0 0 27px 0;
-    }
-
-    .footer__form {
-        margin: 0 0 219px 0;
-    }
-}
-
-@media(max-width: 768px) {
-    .footer__form {
-        margin: 0 0 109px 0;
-    }
-
-    .footer__form-window {
-        width: 240px;
-    }
-
-    .footer__text {
-        display: none;
-    }
-
-    .footer__social {
-        @include flex-center;
-    }
 }

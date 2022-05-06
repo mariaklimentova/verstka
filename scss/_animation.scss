@@ -1,0 +1,41 @@
+/*header*/
+.header__form :focus,
+.header__form :hover {
+    background: $light-pink;
+    color: $black;
+    border-radius: 10px;
+}
+
+/*catalog*/
+.catalog__item:hover .catalog__button-cart,
+.catalog__item:hover .catalog__overlay::before,
+.catalog__item:focus .catalog__button-cart,
+.catalog__item:focus .catalog__overlay::before {
+    display: block;
+}
+
+.catalog__button:focus,
+.catalog__button:hover {
+    border-radius: 10px;
+}
+
+.catalog__button:active {
+    background-color: $sales-bkg-color;
+}
+
+/*footer*/
+.footer__form-window:hover,
+.footer__form-window:focus {
+    background-color: $light-pink;
+}
+
+.footer__form-button:hover,
+.footer__form-button:focus {
+    background-color: $black;
+    color: $light-pink;
+    opacity: 1;
+}
+
+.footer__form-button:active {
+    color: $dark-pink;
+}

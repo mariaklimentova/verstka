@@ -2,15 +2,33 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile-mid {
+        justify-content: center;
+    }
 }
 
 .sales__item {
     margin: 20px 0 0 0;
     padding: 20px;
     box-sizing: border-box;
-    width: 360px;
+    width: 31%;
     height: 260px;
     background-color: $sales-bkg-color;
+
+    @include tablet {
+        height: 167px;
+    }
+
+    @include mobile {
+        width: 47%;
+        height: 247px;
+        margin: 32px 0 0 0;
+    }
+
+    @include mobile-mid {
+        width: 91%;
+    }
 }
 
 .sales__text {
@@ -21,18 +39,23 @@
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 105px 0 0 0;
+
+    @include tablet {
+        @include font(16px, 19px);
+        margin: 59px 0 0 0;
+    }
 }
 
 .sales__titel {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 38px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     color: $dark-pink;
+    @include font(24px, 38px, 700);
+
+    @include tablet {
+        @include font($line-height: 28px);
+    }
 }
 
 .sales__item--woman {
@@ -51,44 +74,28 @@
     background-image: url(../img/accesories.jpg);
     background-position: center;
     background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    margin: 30px 0 0 0;
+
+    @include tablet {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    @include mobile {
+        background-position: 85% 50%;
+        width: 47%;
+        margin: 32px 0 0 0;
+    }
+
+    @include mobile-mid {
+        width: 91%;
+    }
 }
 
 .sales__item--man {
     background-image: url(../img/for-man.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.sales__item--accesories {
-    width: 100%;
-    margin: 30px 0 0 0;
-}
-
-@media(max-width: 1600px) {
-    .sales__item {
-        width: 232px;
-        height: 167px;
-    }
-
-    .sales__text {
-        @include font(16px, 19px);
-        margin: 59px 0 0 0;
-    }
-
-    .sales__titel {
-        @include font(24px, 28px)
-    }
-
-    .sales__item--accesories {
-        width: 100%;
-        margin: 20px 0 0 0;
-    }
-}
-
-@media(max-width: 768px) {
-    .sales__item {
-        width: 343px;
-        height: 247px;
-        margin: 32px 0 0 0;
-    }
 }

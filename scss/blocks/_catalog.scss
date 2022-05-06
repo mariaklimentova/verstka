@@ -6,29 +6,40 @@
 
 .catalog__text {
     text-align: center;
-    font-size: 14px;
-    line-height: 17px;
     color: #9F9F9F;
     margin: 0 0 15px 0;
+    @include font(14px, 17px)
 }
 
 .catalog__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile-mid {
+        justify-content: center;
+    }
 }
 
 .catalog__item {
     background-color: #F8F8F8;
-    width: 360px;
+    width: 31%;
     margin: 30px 0 0 0;
     position: relative;
+
+    @include tablet-mid {
+        width: 48%;
+    }
+
+    @include mobile-mid {
+        width: 91%;
+    }
 }
 
 .catalog__button-cart {
     position: absolute;
-    top: 188px;
-    left: 111px;
+    top: 43%;
+    left: 31%;
     width: 138px;
     height: 43px;
     background-color: transparent;
@@ -41,6 +52,14 @@
     background-position: 10px 10px;
     padding: 0 0 0 35px;
     display: none;
+
+    @include mobile {
+        left: 25%;
+    }
+
+    @include mobile-mid {
+        left: 31%;
+    }
 }
 
 .catalog__overlay {
@@ -49,22 +68,18 @@
 
 .catalog__overlay::before {
     content: '';
-    width: 360px;
+    width: 100%;
     height: 420px;
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
     display: none;
 }
 
-.catalog__item:hover .catalog__button-cart,
-.catalog__item:hover .catalog__overlay::before {
-    display: block;
-}
-
 .catalog__img {
     margin: 0 0 30px 0;
-    width: 360px;
+    width: 100%;
     height: 420px;
+    object-fit: cover;
 }
 
 .catalog__item-titel {
@@ -82,8 +97,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
-    width: 315px;
-    margin: 12px 0 18px 18px;
+    margin: 12px 12px 18px 18px;
 }
 
 .catalog__item-price {
@@ -106,10 +120,9 @@
     font-size: 16px;
     line-height: 19px;
     margin: 48px 0 0 0;
-}
+    transition: border-radius 800ms;
 
-@media(max-width: 1600px) {
-    .catalog__button {
+    @include tablet {
         background-color: #FFFFFF;
         border-color: $dark-pink;
         color: $dark-pink;

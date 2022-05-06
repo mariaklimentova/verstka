@@ -4,10 +4,22 @@
     margin: 109px 0 0 0;
 }
 
+.information__item {
+    @include tablet {
+        @include flex-center;
+        flex-direction: column;
+    }
+}
+
 .information__list {
     display: flex;
     text-align: center;
     padding: 103px 0 103px 0;
+
+    @include tablet {
+        display: block;
+        padding: 48px 0 16px 0
+    }
 }
 
 .information__titel {
@@ -15,30 +27,18 @@
     line-height: 24px;
     color: #FBFBFB;
     font-weight: normal;
+
+    @include tablet {
+        margin: 28px 0 16px 0;
+    }
 }
 
 .information__text {
     padding: 0 15px;
     color: #FBFBFB;
-    @include font(14px, 17px, 300)
-}
+    @include font(14px, 17px, 300);
 
-@media(max-width: 1600px) {
-    .information__list {
-        display: block;
-        padding: 48px 0 16px 0;
-    }
-
-    .information__item {
-        @include flex-center;
-        flex-direction: column;
-    }
-
-    .information__titel {
-        margin: 28px 0 16px 0;
-    }
-
-    .information__text {
+    @include tablet {
         margin: 0 0 48px 0;
         max-width: 360px;
         padding: 0;
