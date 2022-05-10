@@ -6,6 +6,11 @@
     border-radius: 10px;
 }
 
+.header__button:focus,
+.header__button:hover {
+    opacity: 0.5;
+}
+
 /*catalog*/
 .catalog__item:hover .catalog__button-cart,
 .catalog__item:hover .catalog__overlay::before,
@@ -17,10 +22,21 @@
 .catalog__button:focus,
 .catalog__button:hover {
     border-radius: 10px;
+    background-color: $dark-pink;
+    color: $light-pink;
 }
 
 .catalog__button:active {
-    background-color: $sales-bkg-color;
+    background-color: $dark-pink;
+}
+
+.catalog__button-cart:focus,
+.catalog__button-cart:hover {
+    opacity: 0.5;
+}
+
+.catalog__button-cart:active {
+    background: $light-pink;
 }
 
 /*footer*/

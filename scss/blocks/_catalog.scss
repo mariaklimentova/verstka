@@ -114,13 +114,13 @@
 }
 
 .catalog__button {
-    background-color: $dark-pink;
+    background-color: $light-pink;
     padding: 14px 38px;
-    color: #FFFFFF;
+    color: $dark-pink;
     font-size: 16px;
     line-height: 19px;
     margin: 48px 0 0 0;
-    transition: border-radius 800ms;
+    transition: border-radius 800ms, background-color 800ms;
 
     @include tablet {
         background-color: #FFFFFF;

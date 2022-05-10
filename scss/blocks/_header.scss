@@ -58,6 +58,7 @@
     height: 35px;
     border: none;
     color: white;
+    transition: border-radius 800ms, background 800ms;
 
     @include mobile {
         width: 40%;
