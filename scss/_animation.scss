@@ -55,3 +55,15 @@
 .footer__form-button:active {
     color: $dark-pink;
 }
+
+/*breadcrump-product*/
+.breadcrumb__link:hover,
+.breadcrumb__link:focus {
+    color: $dark-pink;
+    font-weight: bold;
+}
+
+.breadcrumb__link:active {
+    background: $sales-bkg-color;
+    border-radius: 10px;
+}

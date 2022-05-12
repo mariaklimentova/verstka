@@ -1,0 +1,28 @@
+.product-card {
+    text-align: center;
+}
+
+.product-card__titel-category {
+    padding: 64px 0 0 0;
+    @include font(14px, 17px, 300);
+    color: $dark-pink;
+    text-transform: uppercase;
+}
+
+.product-card__titel {
+    @include font(18px, 21px, 300);
+    color: #4D4D4D;
+    text-transform: uppercase;
+}
+
+.product-card__text {
+    @include font(14px, 17px, 300);
+    color: #5E5E5E;
+    margin: 48px 25% 0 25%;
+}
+
+.product-card__price {
+    @include font(24px, 29px, 300);
+    color: $dark-pink;
+    margin: 22px 0 0 0;
+}
