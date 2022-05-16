@@ -36,6 +36,7 @@
 
 .header__form {
     position: relative;
+    transition: border-radius 800ms, background 800ms;
 }
 
 .header__form::before {
@@ -48,21 +49,20 @@
     background-image: url(../img/search.svg.svg);
 }
 
-.header__form:hover,
-.header__form:focus {
-    opacity: 0.4;
-}
-
 [type="search"] {
     padding: 10px 50px;
 }
 
 .header__form-window {
     background-color: #222222;
-    ;
     height: 35px;
     border: none;
-    color: $light-pink;
+    color: white;
+    transition: border-radius 800ms, background 800ms;
+
+    @include mobile {
+        width: 40%;
+    }
 }
 
 .header__button:hover+.header__nav,
@@ -88,7 +88,7 @@
     background: white;
     padding: 0 0 185px 33px;
     display: none;
-
+    z-index: 1;
 }
 
 .header__nav-list {
@@ -100,12 +100,8 @@
     margin: 0 0 20px 0;
 }
 
-@media(max-width: 768px) {
-    .header__item-none {
+.header__item-none {
+    @include mobile {
         display: none;
-    }
-
-    .header__form-window {
-        width: 160px;
     }
 }

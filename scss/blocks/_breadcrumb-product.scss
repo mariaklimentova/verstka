@@ -1,0 +1,39 @@
+.breadcrumb__product-wrp {
+    background: $light-pink;
+}
+
+.breadcrumb__product {
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.breadcrumb-product__titel-wrp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.breadcrumb-product__titel {
+    text-transform: uppercase;
+    @include font(24px, 29px);
+    color: $dark-pink;
+}
+
+.breadcrumb__menu-wrp {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.breadcrumb__menu {
+    display: block;
+}
+
+.breadcrumb__link {
+    text-transform: uppercase;
+    @include font(14px, 17px, 300);
+    color: #636363;
+    text-decoration: none;
+}

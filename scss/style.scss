@@ -2,6 +2,7 @@
 @import './general';
 @import './reset';
 @import './mixins';
+@import './animation';
 /*bloks*/
 @import './blocks/header';
 @import './blocks/nav';
@@ -11,3 +12,6 @@
 @import './blocks/footer';
 @import './blocks/information';
 @import './blocks/registration';
+@import './blocks/breadcrumb-product';
+@import './blocks/carousel';
+@import './blocks/product-card';

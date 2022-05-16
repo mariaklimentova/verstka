@@ -1,0 +1,69 @@
+/*header*/
+.header__form :focus,
+.header__form :hover {
+    background: $light-pink;
+    color: $black;
+    border-radius: 10px;
+}
+
+.header__button:focus,
+.header__button:hover {
+    opacity: 0.5;
+}
+
+/*catalog*/
+.catalog__item:hover .catalog__button-cart,
+.catalog__item:hover .catalog__overlay::before,
+.catalog__item:focus .catalog__button-cart,
+.catalog__item:focus .catalog__overlay::before {
+    display: block;
+}
+
+.catalog__button:focus,
+.catalog__button:hover {
+    border-radius: 10px;
+    background-color: $dark-pink;
+    color: $light-pink;
+}
+
+.catalog__button:active {
+    background-color: $dark-pink;
+}
+
+.catalog__button-cart:focus,
+.catalog__button-cart:hover {
+    opacity: 0.5;
+}
+
+.catalog__button-cart:active {
+    background: $light-pink;
+}
+
+/*footer*/
+.footer__form-window:hover,
+.footer__form-window:focus {
+    background-color: $light-pink;
+}
+
+.footer__form-button:hover,
+.footer__form-button:focus {
+    background-color: $black;
+    color: $light-pink;
+    opacity: 1;
+}
+
+.footer__form-button:active {
+    color: $dark-pink;
+}
+
+/*breadcrump-product*/
+.breadcrumb__link:hover,
+.breadcrumb__link:focus {
+    color: $dark-pink;
+    font-weight: bold;
+}
+
+.breadcrumb__link:active {
+    background: $sales-bkg-color;
+    border-radius: 10px;
+}
